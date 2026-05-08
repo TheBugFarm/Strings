@@ -1,8 +1,10 @@
 fn main() {
-    let mut r = String::from("Navneet"); //create a string
-    println!("{} ", r);
-    r.push_str(" Greegs"); //Insert a String
-    println!("{} ", r);
-    r.replace_range(7..10,"Baj"); //Delete or Replace a String portion
-    println!("{} ", r);
+    let mut german  = String::from("du bist ein "); //create a string
+    println!("{} ", german );
+    german.push_str("Hund"); //Insert a String
+    println!("{} ", german);
+    german.replace_range(11..german.len(), " katze");
+    println!("{}", german);
+    german.replace_range(11..german.len(), "");//to replace //Delete or Replace a String portion
+    println!("{} ", german);
 }
